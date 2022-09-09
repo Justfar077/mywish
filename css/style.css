@@ -58,7 +58,85 @@ h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
 
 
 
+<<<<<<< Updated upstream
             /* Tanya Chernenko */
+=======
+/* Tanya Chernenko */
+.heading {
+	max-width: 468px;
+	font-family: Baloo 2;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 80px;
+	line-height: 128px;
+	text-align: left;
+	color: #FC6A57;
+	margin-top: 100px;
+}
+.surprising {
+	max-width: 640px;
+	font-family: 'Nunito';
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 28px;
+	color: #FC6A57;
+	margin-bottom: 10px;
+}
+.big-circle-text {
+	font-family: 'Nunito';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 27px;		
+	color: #FC6A57;
+	text-align: center;
+	padding: 120px 75px 4px 76px;
+}
+.counter {
+	font-family: 'Baloo 2';
+	font-style: normal;
+	font-weight: 800;
+	font-size: 30px;
+	line-height: 48px;
+	color: #FC6A57;
+	text-align: center;
+}
+.small-circle-text {
+	font-family: 'Nunito';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 28px;
+	color: #FC6A57;
+	text-align: center;
+	padding-top: 51px;
+}
+.demo {
+	text-align: center;
+	font-size: 60px;
+	margin-top: 0px;
+}
+.big-ellipse {
+	width: 318px;
+	height: 318px;
+	background: #FFF5F5;
+  	border-radius: 50%;
+  	mix-blend-mode: multiply;
+  	position: absolute;
+  	left: 320px;
+ }
+
+.small-ellipse {
+	width: 130px;
+	height: 130px;
+	background: #FFF5F5;
+  	border-radius: 50%;
+  	mix-blend-mode: multiply;
+  	position: absolute;
+  	left: 576px;
+  	top: 510px;
+}
+>>>>>>> Stashed changes
 
 
 
