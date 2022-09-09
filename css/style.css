@@ -41,7 +41,7 @@ img{vertical-align: top;}
 
 h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
 
-                         /* project */
+             /* project */
 
 
 /* font-family: 'Baloo 2', cursive; */
@@ -50,7 +50,7 @@ h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
 
 
 
-/* Nataly Riabchenko*/
+            /* Nataly Riabchenko*/
 
 
 
@@ -58,7 +58,7 @@ h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
 
 
 
-/* Tanya Chernenko */
+            /* Tanya Chernenko */
 
 
 
@@ -68,4 +68,258 @@ h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
 
 
 
-/* Ruslan Shyshenko */
+
+             /* Ruslan Shyshenko */
+
+/* Третя секція контенту */
+
+.third-section-wrapper{
+	max-width: 1440px;
+	margin: 0 auto;
+	background: #FFF5F5 ;
+	position: relative;
+	overflow: hidden;
+}
+
+.wish-title {
+padding-top: 60px;
+}
+
+.wish-title-item {
+	font-family: 'Baloo 2', cursive;
+	font-weight: 800;
+	font-size: 40px;
+	line-height: 64px;
+	text-align: center;
+	color: #FC6A57;
+}
+
+/* .wish-title-item::before{
+	content: '';
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+   margin-right: 9px;
+   background: #FC6A57;
+} */
+
+/* .wish-title-item::after{
+	content: '';
+	display: inline-block;
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+   margin-left: 9px;
+   background: #FC6A57;
+} */
+
+.wish-container {
+margin-top: 40px;
+margin-bottom: 150px;
+
+}
+
+.wish-section {
+	display: flex;
+	justify-content: space-evenly;
+/* margin: 0px 45px 0px 45px; */
+
+}
+
+.wish-element-upone{
+	background: url(../img/wish1.png) no-repeat center top;
+	width: 386px;
+	height: 386px;
+}
+
+.opacity-element{
+	display: none;
+	padding: 57px 30px 40px 30px;
+	text-align: center;
+	width: 386px;
+	height: 386px;
+	background: #fc6a57c5;
+	box-shadow: 0px 10px 40px rgba(239, 219, 220, 0.4);
+	border-radius: 6px;
+	animation: fade 0.9s linear forwards;
+}
+
+@keyframes fade {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.opacity-icon{
+	animation: bigtitle 2.5s infinite linear;
+}
+
+@keyframes bigtitle {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.opacity-title{
+	animation: rotate 3s infinite linear;
+}
+
+@keyframes rotate {
+	from {
+		font-size: 20px;
+	}
+	to {
+		font-size: 35px;
+	}
+}
+
+.wish-element-upone:hover .opacity-element{
+	display: block;
+}
+
+.wish-element-uptwo{
+	background: url(../img/wish2.png) no-repeat center top;
+	width: 386px;
+	height: 386px;
+} 
+
+.wish-element-uptwo:hover .opacity-element{
+	display: block;
+}
+
+.wish-element-upthree{
+	background: url(../img/wish3.png) no-repeat center top;
+	width: 386px;
+	height: 386px;
+} 
+
+.wish-element-upthree:hover .opacity-element{
+	display: block;
+}
+
+.wish-element-downone{
+	background: url(../img/wish4.png) no-repeat center top;
+	width: 386px;
+	height: 386px;
+} 
+
+.wish-element-downone:hover .opacity-element{
+	display: block;
+}
+
+.wish-element-downtwo{
+	background: url(../img/wish5.png) no-repeat center top;
+	width: 386px;
+	height: 386px;
+} 
+
+.wish-element-downtwo:hover .opacity-element{
+	display: block;
+}
+
+.wish-element-downthree{
+	background: url(../img/wish6.png) no-repeat center top;
+	width: 386px;
+	height: 386px;
+} 
+
+.wish-element-downthree:hover .opacity-element{
+	display: block;
+}
+
+.opacity-title {
+	font-family: 'Baloo 2', cursive;
+	font-weight: 800;
+	font-size: 30px;
+	line-height: 120%;
+	color: #FFFFFF;
+	margin-bottom: 40px;
+}
+
+.opacity-link{
+	margin-top: 63px;
+	display: inline-block;
+	width: 326px;
+	font-family: 'Nunito', sans-serif;
+	font-size: 16px;
+	line-height: 140%;
+	color: #FFFFFF;
+	overflow: hidden;
+}
+
+									/* Футер */
+
+
+.footer-wrapper {
+	padding: 40px 81px 40px 81px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+
+}
+
+.logo:hover {
+	transition: 300ms;
+	transform: scale(1.2);
+}
+
+.logo-item{
+	font-family: 'Baloo 2', cursive;
+	font-weight: 800;
+	font-size: 30px;
+	line-height: 48px;
+	color: #FC6A57;
+}
+
+.logo-item:hover {
+	color: #f15b47;
+	transition: 300ms;
+}
+
+.socnetworks{
+	display: flex;
+}
+
+.socinsta:hover, .socface:hover{
+	transition: 300ms;
+	transform: scale(1.8);
+}
+
+.socface{
+	margin-right: 10px;
+}
+
+.circul1::before{
+	content: '';
+	width: 407px;
+	height: 407px;
+	border-radius: 50%;
+	background: #FFEBEB;
+	position: absolute;
+	top: -110px;
+	left: 475px;
+	mix-blend-mode: multiply;
+}
+
+.circul2::after{
+	content: '';
+	width: 166px;
+	height: 166px;
+	border-radius: 50%;
+	background: #FFEBEB;
+	position: absolute;
+	top: -110px;
+	right: 475px;
+	mix-blend-mode: multiply;
+}
