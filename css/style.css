@@ -58,10 +58,16 @@ h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
 
 
 
-<<<<<<< Updated upstream
+/* <<<<<<< Updated upstream
             /* Tanya Chernenko */
-=======
+/* ======= */ */
 /* Tanya Chernenko */
+
+.add-class{
+position: relative;
+height: 500px;
+}
+
 .heading {
 	max-width: 468px;
 	font-family: Baloo 2;
@@ -136,7 +142,7 @@ h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
   	left: 576px;
   	top: 510px;
 }
->>>>>>> Stashed changes
+/* >>>>>>> Stashed changes */
 
 
 
