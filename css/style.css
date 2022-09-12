@@ -42,7 +42,56 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
 
                          /* project */
-
-
 /* font-family: 'Baloo 2', cursive; */
 /* font-family: 'Nunito', sans-serif; */
+
+.header {
+	width: 1440px;
+	height: 120px;
+	left: calc(50% - 1440px/2);
+	top: 0px;
+	background: linear-gradient(180deg, #FFF1F2 0%, #FFFFFF 75.83%);
+}
+.header-container {
+	position: relative;
+	max-width: 100%;
+}
+.logo {
+	position: absolute;
+	font-family: 'Baloo 2';
+	font-weight: 800;
+    font-size: 30px;
+    line-height: 48px;
+    color: #FC6A57;
+    margin: 40px auto 40px 80px;
+}
+.avatar-container {
+	position: relative;
+	max-width: 560px;
+	height: 623px;
+	top: 137px;
+	left: 80px;
+}
+.avatar-dekor {
+	position: absolute;
+}
+.avatar-foto {
+	position: absolute;
+	z-index: 2;
+	left: 100px;
+	top: 83px;
+}
+.avatar-foto img {
+	width: 100%;
+	display: block;
+}
+.social {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+
+
+
+
