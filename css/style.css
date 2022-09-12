@@ -225,7 +225,7 @@ height: 500px;
 	display: flex;
 	justify-content: center;
 	gap:  60px;
-	margin: 0 auto;
+	margin: 0 auto 100px auto;
 }
 .card {
 	max-width: 386px;
@@ -235,6 +235,7 @@ height: 500px;
 	transition: padding 1s, background 1s;
 	position: relative;
 	bottom: 100px;
+	top: 40px;
 }
 .card-icon-like, .card-icon-unlike {
   opacity: 0;
@@ -299,7 +300,7 @@ height: 500px;
 	display: flex;
 	justify-content: center;
 	gap:  60px;
-	margin: 0 auto;
+	margin: 0 auto 100px auto;
 }
 .name-of-bad-idea {
 	font: Nunito;
