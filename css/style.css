@@ -119,11 +119,10 @@ HEAD
 /* ======= */ */
 /* Tanya Chernenko */
 
-.add-class{
+.counter-part {
 position: relative;
 height: 500px;
 }
-
 .heading {
 	max-width: 468px;
 	font-family: Baloo 2;
@@ -199,6 +198,123 @@ height: 500px;
   	top: 510px;
 }
 /* >>>>>>> Stashed changes */
+
+/* CardsChernenko */
+
+.section-good-idea-wrapper{
+	width: 100%;
+	max-width: 1440px;
+	margin: 0 auto;
+	background: #FFF5F5 ;
+	position: relative;
+	overflow: hidden;
+}
+.wish-title {
+	padding-top: 60px;
+}
+.wish-title-item {
+	font-family: 'Baloo 2', cursive;
+	font-weight: 800;
+	font-size: 40px;
+	line-height: 64px;
+	text-align: center;
+	color: #FC6A57;
+}
+.good-idea {
+	max-width: 1440px;
+	display: flex;
+	justify-content: center;
+	gap:  60px;
+	margin: 0 auto;
+}
+.card {
+	max-width: 386px;
+	height: 330px;
+	background: #FFF5F5;
+	border-radius: 6px;
+	transition: padding 1s, background 1s;
+	position: relative;
+	bottom: 100px;
+}
+.card-icon-like, .card-icon-unlike {
+  opacity: 0;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  transition: opacity 1s;
+}
+.image {
+	padding: 30px 30px 100px 30px;
+}
+.gallery_image {
+	max-width: 100%;
+	border-radius: 4px;
+}
+.name-of-good-idea {
+	font: Nunito;
+	weight: 400;
+	font-size: 20px;
+	line height: 28px;
+	color: #FC6A57;
+ 	text-align: center;
+	padding: 30px 30px 40px 30px;
+	transition: background 1s;
+
+}
+.card:hover {
+  padding: 1px 1px 100px;
+  background: #FC6A57;
+}
+.card:hover .gallery_image {
+  border-radius: 6px;
+}
+.card:hover .image {
+	padding: 0 0 100px 0;
+}
+.card:hover .name-of-good-idea {
+  background: #FC6A57;
+  color: #fff;
+}
+.card:hover .card-icon-like, .card:hover .card-icon-unlike {
+  opacity: 1;
+}
+.wish-title-item-blue {
+	font-family: 'Baloo 2', cursive;
+	font-weight: 800;
+	font-size: 40px;
+	line-height: 64px;
+	text-align: center;
+	color: #1F3865;
+
+}
+.section-bad-idea-wrapper {
+	max-width: 1440px;
+	margin: 0 auto;
+	background: #fff;
+	position: relative;
+	overflow: hidden;
+}
+.bad-idea {
+	max-width: 1440px;
+	display: flex;
+	justify-content: center;
+	gap:  60px;
+	margin: 0 auto;
+}
+.name-of-bad-idea {
+	font: Nunito;
+	weight: 400;
+	font-size: 20px;
+	line height: 28px;
+	text-align: center;
+	color: #1F3865;
+	padding: 30px 30px 40px 30px;
+}
+.card:hover .name-of-bad-idea {
+  background: #FC6A57;
+  color: #fff;
+}
+
 
 
 
