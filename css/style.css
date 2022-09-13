@@ -267,7 +267,7 @@ height: 500px;
   	border-radius: 50%;
   	mix-blend-mode: multiply;
   	position: absolute;
-  	left: 320px;
+  	right: 65px;
  }
 
 .small-ellipse {
@@ -277,7 +277,7 @@ height: 500px;
   	border-radius: 50%;
   	mix-blend-mode: multiply;
   	position: absolute;
-  	left: 578px;
+  	right: 0;
    top: 410px;
 }
 
