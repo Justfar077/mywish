@@ -74,18 +74,13 @@ HEAD
 /* Nataly Riabchenko*/
 
 
-.header-container {
-	/* position: relative; */
-height: 120px;
+.logo-header-container {
+	width: 100%;
+	height: 120px;
 	background: linear-gradient(180deg, #FFF1F2 0%, #FFFFFF 75.83%);
 }
-.logo {
+.logo-header {
 	position: absolute;
-	font-family: 'Baloo 2';
-	font-weight: 800;
-	font-size: 30px;
-	line-height: 48px;
-	color: #FC6A57;
 	margin: 40px auto 40px 80px;
 }
 
@@ -125,6 +120,8 @@ height: 120px;
 }
 
 /* Cards Nata Riabchenko */
+
+
 .section-wrapper{
 	max-width: 1440px;
 	margin: 0 auto;
@@ -140,70 +137,71 @@ height: 120px;
 	padding: 40px 81px 158px 81px;
 }
 .card {
-    flex: 0 0 30%;
-    height: 330px;
-    overflow: hidden;
-    border-radius: 6px;
-    background: #FFF5F5;
-    padding: 30px 30px 100px;
-    position: relative;
-    transition: padding 1s, background 1s;
+   flex: 0 0 30%;
+   height: 330px;
+   overflow: hidden;
+   border-radius: 6px;
+   background: #FFF5F5;
+   padding: 30px 30px 100px;
+   position: relative;
+   transition: padding 1s, background 1s;
 }
 .card-img {
-    max-width: 100%;
-    border-radius: 4px;
+   max-width: 100%;
+   border-radius: 4px;
 }
 .card-text {
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 10;
-    background: #FFF5F5;
-    color: #FC6A57;
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 140%;
-    transition: background 1s;
+   width: 100%;
+   height: 100px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   z-index: 10;
+   background: #FFF5F5;
+   color: #FC6A57;
+   font-family: 'Nunito', sans-serif;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 140%;
+   transition: background 1s;
 }
 .card-icon {
-    opacity: 0;
-    position: absolute;
-    top: 30px;
-    left: 30px;
-    transition: opacity 1s;
+   opacity: 0;
+   position: absolute;
+   top: 30px;
+   left: 30px;
+   transition: opacity 1s;
 }
 .card:hover {
-    padding: 1px 1px 100px;
-    background: #FC6A57;
+   padding: 1px 1px 100px;
+   background: #FC6A57;
 }
 .card:hover .card-img {
-    border-radius: 6px;
+   border-radius: 6px;
 }
 .card:hover .card-text {
-    background: #FC6A57;
-    color: #FFFFFF;
+   background: #FC6A57;
+   color: #FFFFFF;
 }
 .card:hover .card-icon {
-    opacity: 1;
+   opacity: 1;
 }
 
 .brand-container {
-    width: 100%;
-    max-width: 1280px;
-    display: flex;
-    margin: 0 auto;
-    justify-content: space-between;
+   width: 100%;
+   max-width: 1280px;
+   display: flex;
+   margin: 0 auto 50px;
+   justify-content: space-between;
 	padding: 38px 0 95px 0;
 }
 .brand-box {
-	max-width: 100%;
+	width: 203px;
+	height: 202px;
 	position: relative;
 }
 .brand-image img {
@@ -220,47 +218,51 @@ height: 120px;
 	color: #FC6A57;
 	font-size: 20px;
 	padding: 20px;
-	font-family: 'Nunito';
+	font-family: 'Nunito', sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	line-height: 140%;
 }
- .icon-star { 
+.icon-star { 
 	opacity: 0;
 	left: 10px;
 	top: 10px;
-    position: absolute;
-    transition: opacity 1s;
+   position: absolute;
+   transition: opacity 1s;
 }
 .brand-box:hover {
 	border-radius: 6px;
-   	border: 1px solid #FC6A57;
 	background: #FC6A57;
-	
+	transition: 1.2s linear;
 }
- .brand-box:hover .brand-image img {
-    width: 200px;
-	height: 200px;
+.brand-box:hover .brand-image img {
+	padding-top: 2px;
+   width: 199px;
+	height: 199px;
 	border-radius: 6px;
+	border-radius: 6px 6px 0 0;
+	transition: 0.3s;
 }
-  .brand-box:hover .brand-text{
+.brand-box:hover .brand-text{
 	background: #FC6A57;
 	color: #FFFFFF;
+	border-radius: 0 0 6px 6px;
+	transition: 0.3s;
 }
-  .brand-box:hover .icon-star {
+.brand-box:hover .icon-star {
 	opacity: 1;
- }
+}
 
 
 
- 
+
 
 
 					/* Ruslan Shyshenko */
 
 .wrapper-header{
 	max-width: 1440px;
-	margin: 0 auto;
+	margin: 0 auto 100px;
 	display: flex;
 	height: 900px;
 }
@@ -271,8 +273,9 @@ height: 120px;
 
 .right-side{
 	width: 50%;
-	
 }
+
+
 
 .nav__image{
 	display: none;
@@ -289,6 +292,7 @@ height: 120px;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	flex-wrap: wrap;
 }
 
 .nav__link {
@@ -307,6 +311,23 @@ height: 120px;
 	transition: 700ms;
 }
 
+.btn-fixed{
+	width: 50px;
+	height: 50px;
+	background: url(../img/Arrow.png) 50px center no-repeat, #FFEBEB;
+	text-align: center;
+	border-radius: 50%;
+	position: fixed;
+	z-index: 1;
+	bottom: 110px;
+	right: 10px;
+	mix-blend-mode: multiply;
+}
+
+.btn-fixed:hover{
+	background: url(../img/Arrow.png) 50% 35% no-repeat, #FC6A57;
+	transition: 500ms;
+}
 
 
             /* Tanya Chernenko */
@@ -318,7 +339,7 @@ height: 500px;
 }
 .heading {
 	max-width: 468px;
-	font-family: Baloo 2, cursive;
+	font-family: 'Baloo 2', cursive;
 	font-style: normal;
 	font-weight: 800;
 	font-size: 80px;
@@ -375,21 +396,37 @@ height: 500px;
 	width: 318px;
 	height: 318px;
 	background: #FFF5F5;
+<<<<<<< Updated upstream
   	border-radius: 50%;
   	mix-blend-mode: multiply;
   	position: absolute;
   	right: 145px;
  }
+=======
+	border-radius: 50%;
+	mix-blend-mode: multiply;
+	position: absolute;
+	right: 65px;
+}
+>>>>>>> Stashed changes
 
 .small-ellipse {
 	width: 130px;
 	height: 130px;
 	background: #FFF5F5;
+<<<<<<< Updated upstream
   	border-radius: 50%;
   	mix-blend-mode: multiply;
   	position: absolute;
   	right: 80px;
     top: 410px;
+=======
+	border-radius: 50%;
+	mix-blend-mode: multiply;
+	position: absolute;
+	right: 0;
+   top: 410px;
+>>>>>>> Stashed changes
 }
 
 
@@ -404,124 +441,14 @@ height: 500px;
 	position: relative;
 	overflow: hidden;
 }
-.wish-title-wrapper {
-padding-top: 60px;
-display: flex;
-justify-content: center;
-align-items: center;
-}
+
 .animate-title, .animate-title-blue{
 	display: flex;
 }
-.animate-title li{
-	list-style:none;
-	font-family: 'Baloo 2', cursive;
-	font-size:40px;
-	line-height: 64px;
-	color:#FC6A57;
-	animation:ani 2.2s linear infinite
-}
+
 .gap {
 	width: 8px;
 }
-.animate-title li:nth-child(1){animation-delay:.2s}
-.animate-title li:nth-child(3){animation-delay:.8s}
-.animate-title li:nth-child(4){animation-delay:1s}
-.animate-title li:nth-child(5){animation-delay:1.4s}
-.animate-title li:nth-child(6){animation-delay:1.8s}
-.animate-title li:nth-child(7){animation-delay:2s}
-.animate-title li:nth-child(8){animation-delay:2.4s}
-.animate-title li:nth-child(10){animation-delay:2.8s}
-.animate-title li:nth-child(11){animation-delay:2.8s}
-.animate-title li:nth-child(12){animation-delay:3.2s}
-.animate-title li:nth-child(13){animation-delay:3.6s}
-.animate-title li:nth-child(15){animation-delay:4.0s}
-.animate-title li:nth-child(16){animation-delay:4.4s}
-.animate-title li:nth-child(17){animation-delay:4.8s}
-.animate-title li:nth-child(18){animation-delay:5.0s}
-
-@keyframes ani {
-0%{color: #FC6A57;
-	text-shadow:none;
-}
-90%{color: #f5a59b;
-	text-shadow:none;
-}
-100%{color: #fff5f5;
-	mix-blend-mode: multiply;
-	text-shadow:0 0 7px #FC6A57,0 0 70px #f0c3bd}
-}
-
-.cirklit{
-	width: 20px;
-	height: 20px;
-	background: #FFF5F5;
-	mix-blend-mode: multiply;
-	border-radius: 50%;
-	margin:0 15px;
-}
-
-.cirklit:first-child, .cirkbig:first-child {
-	animation: cirleft 5s linear infinite;
-	transform: translateX(0px);
-}
-
-@keyframes cirleft{
-	0%{transform: translateX(0px)}
-	50%{transform: translateX(-400px)}
-	100%{transform: translateX(0px)}
-}
-
-.cirklit:last-child{
-	animation: cirright 5s linear infinite;
-	transform: translateX(0px);
-}
-
-@keyframes cirright{
-	0%{transform: translateX(0px)}
-	50%{transform: translateX(400px)}
-	100%{transform: translateX(0px)}
-}
-
-.cirkbig{
-	width: 48px;
-	height: 48px;
-	background: #FFF5F5;
-	mix-blend-mode: multiply;
-	border-radius: 50%;
-	margin:0 15px;
-}
-
-.wish-title-wrapper .cirkbig:nth-child(4){
-	animation: cirrightbg 3s linear infinite;
-	transform: translateX(0px);
-}
-
-@keyframes cirrightbg{
-	0%{transform: translateX(0px)}
-	50%{transform: translateX(300px)}
-	100%{transform: translateX(0px)}
-}
-
-.wish-title-wrapper .cirkbig:nth-child(2){
-	animation: cirleftbg 3s linear infinite;
-	transform: translateX(0px);
-}
-
-@keyframes cirleftbg{
-	0%{transform: translateX(0px)}
-	50%{transform: translateX(-300px)}
-	100%{transform: translateX(0px)}
-}
-.wish-title-item {
-	font-family: 'Baloo 2', cursive;
-	font-weight: 800;
-	font-size: 40px;
-	line-height: 64px;
-	text-align: center;
-	color: #FC6A57;
-}
-
 
 .good-idea {
 	max-width: 1440px;
@@ -596,7 +523,6 @@ align-items: center;
 	line-height: 64px;
 	text-align: center;
 	color: #1F3865;
-
 }
 .section-bad-idea-wrapper {
 	max-width: 1440px;
@@ -618,18 +544,16 @@ align-items: center;
 	font-size:40px;
 	line-height: 64px;
 	color: #1F3865;
+<<<<<<< Updated upstream
 	animation:anib 2.2s linear infinite
+=======
+	animation:anib 5s linear infinite
+>>>>>>> Stashed changes
 }
-.animate-title-blue li:nth-child(1){animation-delay:.2s}
-.animate-title-blue li:nth-child(3){animation-delay:.8s}
-.animate-title-blue li:nth-child(4){animation-delay:1s}
-.animate-title-blue li:nth-child(5){animation-delay:1.4s}
-.animate-title-blue li:nth-child(6){animation-delay:1.8s}
-.animate-title-blue li:nth-child(7){animation-delay:2s}
-.animate-title-blue li:nth-child(8){animation-delay:2.4s}
-.animate-title-blue li:nth-child(10){animation-delay:2.8s}
-.animate-title-blue li:nth-child(11){animation-delay:2.8s}
-.animate-title-blue li:nth-child(12){animation-delay:3.2s}
+
+.animate-title-blue li:nth-child(10){animation-delay:2.3s}
+.animate-title-blue li:nth-child(11){animation-delay:2.7s}
+.animate-title-blue li:nth-child(12){animation-delay:3.1s}
 .animate-title-blue li:nth-child(14){animation-delay:3.6s}
 .animate-title-blue li:nth-child(15){animation-delay:4.0s}
 .animate-title-blue li:nth-child(16){animation-delay:4.4s}
@@ -639,10 +563,10 @@ align-items: center;
 0%{color: #1F3865;
 	text-shadow:none;
 }
-90%{color: #d8e1f3;
+90%{color: #f8f7f7;
 	text-shadow:none;
 }
-100%{color: #ffffff;
+100%{color: #f54545;
 	mix-blend-mode: multiply;
 	text-shadow:0 0 7px #1F3865,0 0 70px #c4d3ed}
 }
@@ -663,14 +587,6 @@ align-items: center;
 
 
 
-
-
-
-
-
-
-
-
              /* Ruslan Shyshenko */
 
 /* Третя секція контенту */
@@ -682,8 +598,6 @@ align-items: center;
 	overflow: hidden;
 }
 
-
-
 .wish-title-wrapper {
 padding-top: 60px;
 display: flex;
@@ -694,6 +608,7 @@ align-items: center;
 .animate-title{
 	display: flex;
 }
+
 .animate-title li{
 	list-style:none;
 	font-family: 'Baloo 2', cursive;
@@ -713,12 +628,8 @@ align-items: center;
 .animate-title li:nth-child(8){animation-delay:2.8s}
 
 @keyframes ani {
-0%{color: #FC6A57;;
-	text-shadow:none;
-}
-90%{color: #f5a59b;;
-	text-shadow:none;
-}
+0%{color: #FC6A57;text-shadow:none;}
+90%{color: #f5a59b;;text-shadow:none;}
 100%{color: #fff5f5;
 	mix-blend-mode: multiply;
 	text-shadow:0 0 7px #FC6A57,0 0 70px #f0c3bd}
@@ -923,27 +834,36 @@ margin-bottom: 150px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	position: relative;
-
+	/* position: relative; */
 }
 
-.logo:hover {
-	transition: 300ms;
-	transform: scale(1.2);
+.animate-logo{
+	display: flex;
 }
-
-.logo-item{
+.animate-logo li{
 	font-family: 'Baloo 2', cursive;
 	font-weight: 800;
 	font-size: 30px;
 	line-height: 48px;
 	color: #FC6A57;
+	animation:anil 3s linear infinite
 }
 
-.logo-item:hover {
-	color: #f15b47;
-	transition: 300ms;
+.animate-logo li:nth-child(1){animation-delay:.2s}
+.animate-logo li:nth-child(2){animation-delay:.5s}
+.animate-logo li:nth-child(4){animation-delay:0.8s}
+.animate-logo li:nth-child(5){animation-delay:1.1s}
+.animate-logo li:nth-child(6){animation-delay:1.4s}
+.animate-logo li:nth-child(7){animation-delay:1.7s}
+.animate-logo li:nth-child(8){animation-delay:2s}
+.animate-logo li:nth-child(9){animation-delay:.3s}
+
+@keyframes anil {
+0%{color:#FC6A57;text-shadow:none}
+50%{color:#FFF5F5;text-shadow:none}
+100%{color:#FC6A57;}
 }
+
 
 .socnetworks{
 	display: flex;
@@ -958,6 +878,10 @@ margin-bottom: 150px;
 	margin-right: 10px;
 }
 
+.circul-container{
+position: relative;
+}
+
 .circul1::before{
 	content: '';
 	width: 407px;
@@ -965,8 +889,8 @@ margin-bottom: 150px;
 	border-radius: 50%;
 	background: #FFEBEB;
 	position: absolute;
-	top: -110px;
-	left: 475px;
+	top: -170px;
+	left: -265px;
 	mix-blend-mode: multiply;
 }
 
@@ -977,12 +901,10 @@ margin-bottom: 150px;
 	border-radius: 50%;
 	background: #FFEBEB;
 	position: absolute;
-	top: -110px;
-	right: 475px;
+	top: -170px;
+   right: -230px;
 	mix-blend-mode: multiply;
 }
-
-
 
 
 
