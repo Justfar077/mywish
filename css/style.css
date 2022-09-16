@@ -396,37 +396,31 @@ height: 500px;
 	width: 318px;
 	height: 318px;
 	background: #FFF5F5;
-<<<<<<< Updated upstream
-  	border-radius: 50%;
-  	mix-blend-mode: multiply;
-  	position: absolute;
-  	right: 145px;
- }
-=======
+	border-radius: 50%;
+	mix-blend-mode: multiply;
+	position: absolute;
+	right: 145px;
 	border-radius: 50%;
 	mix-blend-mode: multiply;
 	position: absolute;
 	right: 65px;
 }
->>>>>>> Stashed changes
+
 
 .small-ellipse {
 	width: 130px;
 	height: 130px;
 	background: #FFF5F5;
-<<<<<<< Updated upstream
-  	border-radius: 50%;
-  	mix-blend-mode: multiply;
-  	position: absolute;
-  	right: 80px;
-    top: 410px;
-=======
+	border-radius: 50%;
+	mix-blend-mode: multiply;
+	position: absolute;
+	right: 80px;
+   top: 410px;
 	border-radius: 50%;
 	mix-blend-mode: multiply;
 	position: absolute;
 	right: 0;
    top: 410px;
->>>>>>> Stashed changes
 }
 
 
@@ -544,11 +538,7 @@ height: 500px;
 	font-size:40px;
 	line-height: 64px;
 	color: #1F3865;
-<<<<<<< Updated upstream
-	animation:anib 2.2s linear infinite
-=======
-	animation:anib 5s linear infinite
->>>>>>> Stashed changes
+	animation:anib 2.2s linear infinite;
 }
 
 .animate-title-blue li:nth-child(10){animation-delay:2.3s}
