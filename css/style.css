@@ -125,121 +125,134 @@ height: 120px;
 }
 
 /* Cards Nata Riabchenko */
-
+.section-wrapper{
+	max-width: 1440px;
+	margin: 0 auto;
+	background: #FFF;
+	overflow: hidden;
+}
 .cards {
-  
-  max-width: 1440px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  padding: 38px 81px 0 81px;
+	width: 100%;
+	max-width: 1440px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	padding: 40px 81px 158px 81px;
 }
 .card {
-  flex: 0 0 30%;
-  height: 330px;
-  overflow: hidden;
-  border-radius: 6px;
-  background: #FFF5F5;
-  padding: 30px 30px 100px;
-  position: relative;
-  transition: padding 1s, background 1s;
+    flex: 0 0 30%;
+    height: 330px;
+    overflow: hidden;
+    border-radius: 6px;
+    background: #FFF5F5;
+    padding: 30px 30px 100px;
+    position: relative;
+    transition: padding 1s, background 1s;
 }
 .card-img {
-  max-width: 100%;
-  border-radius: 4px;
+    max-width: 100%;
+    border-radius: 4px;
 }
 .card-text {
-  width: 100%;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 10;
-  background: #FFF5F5;
-  color: #FC6A57;
-  font-family: 'Nunito';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 140%;
-  transition: background 1s;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    background: #FFF5F5;
+    color: #FC6A57;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    transition: background 1s;
 }
 .card-icon {
-  opacity: 0;
-  position: absolute;
-  top: 30px;
-  left: 30px;
-  transition: opacity 1s;
+    opacity: 0;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    transition: opacity 1s;
 }
 .card:hover {
-  padding: 1px 1px 100px;
-  background: #FC6A57;
+    padding: 1px 1px 100px;
+    background: #FC6A57;
 }
 .card:hover .card-img {
-  border-radius: 6px;
+    border-radius: 6px;
 }
 .card:hover .card-text {
-  background: #FC6A57;
-  color: #FFFFFF;
+    background: #FC6A57;
+    color: #FFFFFF;
 }
 .card:hover .card-icon {
-  opacity: 1;
+    opacity: 1;
 }
 
 .brand-container {
+    width: 100%;
+    max-width: 1280px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+	padding: 38px 0 95px 0;
+}
+.brand-box {
+	max-width: 100%;
+	position: relative;
+}
+.brand-image img {
+	margin: 0 auto;
+	width: 160px;
+	height: 160px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 
-	 max-width: 1280px;
-	 margin: 0 auto;
-	 display: flex;
-	 justify-content: space-between;
- 
- }
- .brand-box {
- 	box-sizing: border-box;
-	 width: 200px;
-	 height: 270px;
-   position: relative;
-	 }
-
- .brand-image img {
-	  max-width: 100%;
-	  display: block;
-  }
- .brand-text {
-	 font-family: 'Nunito';
-	 font-style: normal;
-	 font-weight: 400;
-	 font-size: 20px;
-	 line-height: 140%;
-	 color: #FC6A57;
-	 text-align: center;
-	 display: block;
-	 padding: 20px 0px;
-  }
+}
+.brand-text {
+	text-align: center;
+	color: #FC6A57;
+	font-size: 20px;
+	padding: 20px;
+	font-family: 'Nunito';
+	font-style: normal;
+	font-weight: 400;
+	line-height: 140%;
+}
  .icon-star { 
-	 opacity: 0;
-	 left: 10px;
-	 top: 10px;
-   position: absolute;
-	 transition: opacity 1s;
+	opacity: 0;
+	left: 10px;
+	top: 10px;
+    position: absolute;
+    transition: opacity 1s;
+}
+.brand-box:hover {
+	border-radius: 6px;
+   	border: 1px solid #FC6A57;
+	background: #FC6A57;
+	
+}
+ .brand-box:hover .brand-image img {
+    width: 200px;
+	height: 200px;
+	border-radius: 6px;
+}
+  .brand-box:hover .brand-text{
+	background: #FC6A57;
+	color: #FFFFFF;
+}
+  .brand-box:hover .icon-star {
+	opacity: 1;
  }
- .brand-box:hover .brand-image {
-	 border: 1px solid #FC6A57;
-	 border-radius: 6px solid #FC6A57;
-	 background: #FC6A57;
-	 width: 200px;
-  }
- 
- .brand-box:hover .brand-text{
-	 background: #FC6A57;
- }
- 
- .brand-box:hover .icon-star {
-	 opacity: 1;
- }
+
+
+
  
 
 
@@ -376,7 +389,7 @@ height: 500px;
   	mix-blend-mode: multiply;
   	position: absolute;
   	right: 0;
-   top: 410px;
+    top: 410px;
 }
 
 
