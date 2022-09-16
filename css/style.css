@@ -297,16 +297,15 @@ height: 120px;
 	line-height: 22px;
 	text-align: center;
 	color: #FC6A57;
+	padding: 9px 20px;
+	border-radius: 20px;
 }
 
 .nav__link:hover{
-	padding: 9px 20px;
 	background: #FC6A57;
-	border-radius: 20px;
 	color: #FFF;
 	transition: 700ms;
 }
-
 
 
 
@@ -832,3 +831,15 @@ margin-bottom: 150px;
 	right: 475px;
 	mix-blend-mode: multiply;
 }
+
+
+
+
+
+/* Адаптація проекту */
+
+
+@media only screen and (max-width: 1199px){
+	
+}
+
