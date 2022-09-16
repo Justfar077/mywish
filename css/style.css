@@ -335,6 +335,7 @@ height: 500px;
 	line-height: 28px;
 	color: #FC6A57;
 	margin-bottom: 10px;
+	right: 80px;
 }
 .big-circle-text {
 	font-family: 'Nunito', sans-serif;
@@ -377,7 +378,7 @@ height: 500px;
   	border-radius: 50%;
   	mix-blend-mode: multiply;
   	position: absolute;
-  	right: 65px;
+  	right: 145px;
  }
 
 .small-ellipse {
@@ -387,7 +388,7 @@ height: 500px;
   	border-radius: 50%;
   	mix-blend-mode: multiply;
   	position: absolute;
-  	right: 0;
+  	right: 80px;
     top: 410px;
 }
 
@@ -617,7 +618,7 @@ align-items: center;
 	font-size:40px;
 	line-height: 64px;
 	color: #1F3865;
-	animation:ani 2.2s linear infinite
+	animation:anib 2.2s linear infinite
 }
 .animate-title-blue li:nth-child(1){animation-delay:.2s}
 .animate-title-blue li:nth-child(3){animation-delay:.8s}
@@ -634,7 +635,7 @@ align-items: center;
 .animate-title-blue li:nth-child(16){animation-delay:4.4s}
 .animate-title-blue li:nth-child(17){animation-delay:4.8s}
 
-@keyframes ani {
+@keyframes anib {
 0%{color: #1F3865;
 	text-shadow:none;
 }
