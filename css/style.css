@@ -189,7 +189,7 @@ height: 500px;
 }
 .heading {
 	max-width: 468px;
-	font-family: Baloo 2;
+	font-family: Baloo 2, cursive;
 	font-style: normal;
 	font-weight: 800;
 	font-size: 80px;
@@ -200,7 +200,7 @@ height: 500px;
 }
 .surprising {
 	max-width: 640px;
-	font-family: 'Nunito';
+	font-family: 'Nunito', sans-serif;
 	font-weight: 400;
 	font-size: 20px;
 	line-height: 28px;
@@ -208,7 +208,7 @@ height: 500px;
 	margin-bottom: 10px;
 }
 .big-circle-text {
-	font-family: 'Nunito';
+	font-family: 'Nunito', sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 20px;
@@ -218,7 +218,7 @@ height: 500px;
 	padding: 120px 75px 4px 76px;
 }
 .counter {
-	font-family: 'Baloo 2';
+	font-family: 'Baloo 2', cursive;
 	font-style: normal;
 	font-weight: 800;
 	font-size: 30px;
@@ -227,7 +227,7 @@ height: 500px;
 	text-align: center;
 }
 .small-circle-text {
-	font-family: 'Nunito';
+	font-family: 'Nunito', sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 20px;
@@ -265,16 +265,123 @@ height: 500px;
 
 /* CardsChernenko */
 
-.section-good-idea-wrapper{
+
+.section-good-idea-wrapper {
 	width: 100%;
 	max-width: 1440px;
 	margin: 0 auto;
-	background: #FFF5F5 ;
+	background: #FFF5F5;
 	position: relative;
 	overflow: hidden;
 }
-.wish-title {
-	padding-top: 60px;
+.wish-title-wrapper {
+padding-top: 60px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.animate-title, .animate-title-blue{
+	display: flex;
+}
+.animate-title li{
+	list-style:none;
+	font-family: 'Baloo 2', cursive;
+	font-size:40px;
+	line-height: 64px;
+	color:#FC6A57;
+	animation:ani 2.2s linear infinite
+}
+.gap {
+	width: 8px;
+}
+.animate-title li:nth-child(1){animation-delay:.2s}
+.animate-title li:nth-child(3){animation-delay:.8s}
+.animate-title li:nth-child(4){animation-delay:1s}
+.animate-title li:nth-child(5){animation-delay:1.4s}
+.animate-title li:nth-child(6){animation-delay:1.8s}
+.animate-title li:nth-child(7){animation-delay:2s}
+.animate-title li:nth-child(8){animation-delay:2.4s}
+.animate-title li:nth-child(10){animation-delay:2.8s}
+.animate-title li:nth-child(11){animation-delay:2.8s}
+.animate-title li:nth-child(12){animation-delay:3.2s}
+.animate-title li:nth-child(13){animation-delay:3.6s}
+.animate-title li:nth-child(15){animation-delay:4.0s}
+.animate-title li:nth-child(16){animation-delay:4.4s}
+.animate-title li:nth-child(17){animation-delay:4.8s}
+.animate-title li:nth-child(18){animation-delay:5.0s}
+
+@keyframes ani {
+0%{color: #FC6A57;
+	text-shadow:none;
+}
+90%{color: #f5a59b;
+	text-shadow:none;
+}
+100%{color: #fff5f5;
+	mix-blend-mode: multiply;
+	text-shadow:0 0 7px #FC6A57,0 0 70px #f0c3bd}
+}
+
+.cirklit{
+	width: 20px;
+	height: 20px;
+	background: #FFF5F5;
+	mix-blend-mode: multiply;
+	border-radius: 50%;
+	margin:0 15px;
+}
+
+.cirklit:first-child, .cirkbig:first-child {
+	animation: cirleft 5s linear infinite;
+	transform: translateX(0px);
+}
+
+@keyframes cirleft{
+	0%{transform: translateX(0px)}
+	50%{transform: translateX(-400px)}
+	100%{transform: translateX(0px)}
+}
+
+.cirklit:last-child{
+	animation: cirright 5s linear infinite;
+	transform: translateX(0px);
+}
+
+@keyframes cirright{
+	0%{transform: translateX(0px)}
+	50%{transform: translateX(400px)}
+	100%{transform: translateX(0px)}
+}
+
+.cirkbig{
+	width: 48px;
+	height: 48px;
+	background: #FFF5F5;
+	mix-blend-mode: multiply;
+	border-radius: 50%;
+	margin:0 15px;
+}
+
+.wish-title-wrapper .cirkbig:nth-child(4){
+	animation: cirrightbg 3s linear infinite;
+	transform: translateX(0px);
+}
+
+@keyframes cirrightbg{
+	0%{transform: translateX(0px)}
+	50%{transform: translateX(300px)}
+	100%{transform: translateX(0px)}
+}
+
+.wish-title-wrapper .cirkbig:nth-child(2){
+	animation: cirleftbg 3s linear infinite;
+	transform: translateX(0px);
+}
+
+@keyframes cirleftbg{
+	0%{transform: translateX(0px)}
+	50%{transform: translateX(-300px)}
+	100%{transform: translateX(0px)}
 }
 .wish-title-item {
 	font-family: 'Baloo 2', cursive;
@@ -284,6 +391,8 @@ height: 500px;
 	text-align: center;
 	color: #FC6A57;
 }
+
+
 .good-idea {
 	max-width: 1440px;
 	display: flex;
@@ -311,7 +420,7 @@ height: 500px;
 .image {
 	padding: 30px 30px 100px 30px;
 }
-.gallery_image {
+.gallery-image {
 	max-width: 100%;
 	border-radius: 4px;
 }
@@ -329,19 +438,22 @@ height: 500px;
 	padding: 1px 1px 100px;
 	background: #FC6A57;
 	transition: 1s;
+	
 }
 .card:hover .gallery_image {
-	border-radius: 6px;
+	
 	transition: 1s;
 }
 .card:hover .image {
 	padding: 0 0 100px 0;
 	transition: 1s;
+	
 }
 .card:hover .name-of-good-idea {
 	background: #FC6A57;
 	color: #fff;
 	transition: 1s;
+	border-radius: 6px;
 }
 .card:hover .card-icon-like, .card:hover .card-icon-unlike {
 	opacity: 1;
@@ -370,6 +482,41 @@ height: 500px;
 	gap:  60px;
 	margin: 0 auto 100px auto;
 }
+.animate-title-blue li{
+	list-style:none;
+	font-family: 'Baloo 2', cursive;
+	font-size:40px;
+	line-height: 64px;
+	color: #1F3865;
+	animation:ani 2.2s linear infinite
+}
+.animate-title-blue li:nth-child(1){animation-delay:.2s}
+.animate-title-blue li:nth-child(3){animation-delay:.8s}
+.animate-title-blue li:nth-child(4){animation-delay:1s}
+.animate-title-blue li:nth-child(5){animation-delay:1.4s}
+.animate-title-blue li:nth-child(6){animation-delay:1.8s}
+.animate-title-blue li:nth-child(7){animation-delay:2s}
+.animate-title-blue li:nth-child(8){animation-delay:2.4s}
+.animate-title-blue li:nth-child(10){animation-delay:2.8s}
+.animate-title-blue li:nth-child(11){animation-delay:2.8s}
+.animate-title-blue li:nth-child(12){animation-delay:3.2s}
+.animate-title-blue li:nth-child(14){animation-delay:3.6s}
+.animate-title-blue li:nth-child(15){animation-delay:4.0s}
+.animate-title-blue li:nth-child(16){animation-delay:4.4s}
+.animate-title-blue li:nth-child(17){animation-delay:4.8s}
+
+@keyframes ani {
+0%{color: #1F3865;
+	text-shadow:none;
+}
+90%{color: #d8e1f3;
+	text-shadow:none;
+}
+100%{color: #ffffff;
+	mix-blend-mode: multiply;
+	text-shadow:0 0 7px #1F3865,0 0 70px #c4d3ed}
+}
+
 .name-of-bad-idea {
 	font-family: 'Nunito', sans-serif;
 	font-size: 20px;
@@ -381,6 +528,7 @@ height: 500px;
 .card:hover .name-of-bad-idea {
 	background: #FC6A57;
 	color: #fff;
+	border-radius: 6px;
 }
 
 
@@ -424,6 +572,7 @@ align-items: center;
 	color:#FC6A57;
 	animation:ani 2.2s linear infinite
 }
+
 .animate-title li:nth-child(1){animation-delay:.2s}
 .animate-title li:nth-child(2){animation-delay:.8s}
 .animate-title li:nth-child(3){animation-delay:1s}
