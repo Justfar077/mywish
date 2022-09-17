@@ -400,13 +400,7 @@ height: 500px;
 	mix-blend-mode: multiply;
 	position: absolute;
 	right: 145px;
-	border-radius: 50%;
-	mix-blend-mode: multiply;
-	position: absolute;
-	right: 65px;
 }
-
-
 .small-ellipse {
 	width: 130px;
 	height: 130px;
@@ -415,17 +409,10 @@ height: 500px;
 	mix-blend-mode: multiply;
 	position: absolute;
 	right: 80px;
-   top: 410px;
-	border-radius: 50%;
-	mix-blend-mode: multiply;
-	position: absolute;
-	right: 0;
-   top: 410px;
+   	top: 410px;
 }
 
-
 /* CardsChernenko */
-
 
 .section-good-idea-wrapper {
 	width: 100%;
@@ -435,15 +422,12 @@ height: 500px;
 	position: relative;
 	overflow: hidden;
 }
-
 .animate-title, .animate-title-blue{
 	display: flex;
 }
-
 .gap {
 	width: 8px;
 }
-
 .good-idea {
 	max-width: 1440px;
 	display: flex;
@@ -483,22 +467,18 @@ height: 500px;
 	text-align: center;
 	padding: 30px 30px 40px 30px;
 	transition: background 1s;
-
 }
 .card:hover {
 	padding: 1px 1px 100px;
 	background: #FC6A57;
 	transition: 1s;
-	
 }
 .card:hover .gallery_image {
-	
 	transition: 1s;
 }
 .card:hover .image {
 	padding: 0 0 100px 0;
 	transition: 1s;
-	
 }
 .card:hover .name-of-good-idea {
 	background: #FC6A57;
@@ -560,7 +540,6 @@ height: 500px;
 	mix-blend-mode: multiply;
 	text-shadow:0 0 7px #1F3865,0 0 70px #c4d3ed}
 }
-
 .name-of-bad-idea {
 	font-family: 'Nunito', sans-serif;
 	font-size: 20px;
