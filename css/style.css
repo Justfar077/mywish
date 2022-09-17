@@ -76,7 +76,7 @@ HEAD
 
 .header-container {
 	/* position: relative; */
-height: 120px;
+	height: 120px;
 	background: linear-gradient(180deg, #FFF1F2 0%, #FFFFFF 75.83%);
 }
 .logo {
@@ -88,8 +88,8 @@ height: 120px;
 	color: #FC6A57;
 	margin: 40px auto 40px 80px;
 }
-
 .avatar-container {
+	display: flex;
 	position: relative;
 	max-width: 560px;
 	height: 623px;
@@ -98,6 +98,7 @@ height: 120px;
 }
 .avatar-dekor {
 	position: absolute;
+	
 }
 .avatar-foto {
 	position: absolute;
@@ -107,7 +108,7 @@ height: 120px;
 }
 .avatar-foto img {
 	width: 100%;
-	display: block;
+	display: flex;
 }
 .social {
 	display: flex;
@@ -115,6 +116,7 @@ height: 120px;
 	left: 0;
 	bottom: 0;
 }
+
 .social>div{
 	margin: 0 10px;
 }
@@ -123,6 +125,7 @@ height: 120px;
 	transition: 300ms;
 	transform: scale(1.8);
 }
+
 
 /* Cards Nata Riabchenko */
 .section-wrapper{
@@ -137,7 +140,7 @@ height: 120px;
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
-	padding: 40px 81px 158px 81px;
+	
 }
 .card {
     flex: 0 0 30%;
@@ -200,21 +203,24 @@ height: 120px;
     display: flex;
     margin: 0 auto;
     justify-content: space-between;
-	padding: 38px 0 95px 0;
+	padding: 38px 0 158px 0;
 }
 .brand-box {
-	max-width: 100%;
+	flex: 0 0 20%;
+	border-radius: 6px;
+	background: #fff;
 	position: relative;
+
+	
 }
 .brand-image img {
 	margin: 0 auto;
 	width: 160px;
 	height: 160px;
 	display: flex;
-	align-items: center;
-	justify-content: center;
-
+	border-radius: 6px;
 }
+
 .brand-text {
 	text-align: center;
 	color: #FC6A57;
@@ -235,13 +241,13 @@ height: 120px;
 .brand-box:hover {
 	border-radius: 6px;
    	border: 1px solid #FC6A57;
-	background: #FC6A57;
+	background: #fff;
 	
 }
  .brand-box:hover .brand-image img {
     width: 200px;
 	height: 200px;
-	border-radius: 6px;
+   
 }
   .brand-box:hover .brand-text{
 	background: #FC6A57;
@@ -251,11 +257,47 @@ height: 120px;
 	opacity: 1;
  }
 
+@media only screen 
+	and (max-width: 420px){
+
+.wrapper{
+	padding: 0 20px;
+}
+
+		.avatar-dekor {
+		display: none;
+}
+.avatar-foto {
+	top: 10px;
+	left: 20px;
+}
+		.cards {
+			display: block;
+			margin: 0 20px;
+		}
+		.card { 
+			height: 330px;
+			margin-bottom: 60px;
+		}
+
+		.brand-container {
+		display: block;	
+	}
+
+		.brand-image img {
+		width: 80px;
+		height: 80px;
+		display: block;
+	}
+	.brand-text {
+	text-align: right;
+	
+}
 
 
  
 
-
+	}	
 					/* Ruslan Shyshenko */
 
 .wrapper-header{
@@ -297,15 +339,16 @@ height: 120px;
 	line-height: 22px;
 	text-align: center;
 	color: #FC6A57;
-	padding: 9px 20px;
-	border-radius: 20px;
 }
 
 .nav__link:hover{
+	padding: 9px 20px;
 	background: #FC6A57;
+	border-radius: 20px;
 	color: #FFF;
 	transition: 700ms;
 }
+
 
 
 
@@ -318,7 +361,7 @@ height: 500px;
 }
 .heading {
 	max-width: 468px;
-	font-family: Baloo 2, cursive;
+	font-family: Baloo 2;
 	font-style: normal;
 	font-weight: 800;
 	font-size: 80px;
@@ -329,16 +372,15 @@ height: 500px;
 }
 .surprising {
 	max-width: 640px;
-	font-family: 'Nunito', sans-serif;
+	font-family: 'Nunito';
 	font-weight: 400;
 	font-size: 20px;
 	line-height: 28px;
 	color: #FC6A57;
 	margin-bottom: 10px;
-	right: 80px;
 }
 .big-circle-text {
-	font-family: 'Nunito', sans-serif;
+	font-family: 'Nunito';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 20px;
@@ -348,7 +390,7 @@ height: 500px;
 	padding: 120px 75px 4px 76px;
 }
 .counter {
-	font-family: 'Baloo 2', cursive;
+	font-family: 'Baloo 2';
 	font-style: normal;
 	font-weight: 800;
 	font-size: 30px;
@@ -357,7 +399,7 @@ height: 500px;
 	text-align: center;
 }
 .small-circle-text {
-	font-family: 'Nunito', sans-serif;
+	font-family: 'Nunito';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 20px;
@@ -378,7 +420,7 @@ height: 500px;
   	border-radius: 50%;
   	mix-blend-mode: multiply;
   	position: absolute;
-  	right: 145px;
+  	right: 65px;
  }
 
 .small-ellipse {
@@ -388,130 +430,23 @@ height: 500px;
   	border-radius: 50%;
   	mix-blend-mode: multiply;
   	position: absolute;
-  	right: 80px;
+  	right: 0;
     top: 410px;
 }
 
 
 /* CardsChernenko */
 
-
-.section-good-idea-wrapper {
+.section-good-idea-wrapper{
 	width: 100%;
 	max-width: 1440px;
 	margin: 0 auto;
-	background: #FFF5F5;
+	background: #FFF5F5 ;
 	position: relative;
 	overflow: hidden;
 }
-.wish-title-wrapper {
-padding-top: 60px;
-display: flex;
-justify-content: center;
-align-items: center;
-}
-.animate-title, .animate-title-blue{
-	display: flex;
-}
-.animate-title li{
-	list-style:none;
-	font-family: 'Baloo 2', cursive;
-	font-size:40px;
-	line-height: 64px;
-	color:#FC6A57;
-	animation:ani 2.2s linear infinite
-}
-.gap {
-	width: 8px;
-}
-.animate-title li:nth-child(1){animation-delay:.2s}
-.animate-title li:nth-child(3){animation-delay:.8s}
-.animate-title li:nth-child(4){animation-delay:1s}
-.animate-title li:nth-child(5){animation-delay:1.4s}
-.animate-title li:nth-child(6){animation-delay:1.8s}
-.animate-title li:nth-child(7){animation-delay:2s}
-.animate-title li:nth-child(8){animation-delay:2.4s}
-.animate-title li:nth-child(10){animation-delay:2.8s}
-.animate-title li:nth-child(11){animation-delay:2.8s}
-.animate-title li:nth-child(12){animation-delay:3.2s}
-.animate-title li:nth-child(13){animation-delay:3.6s}
-.animate-title li:nth-child(15){animation-delay:4.0s}
-.animate-title li:nth-child(16){animation-delay:4.4s}
-.animate-title li:nth-child(17){animation-delay:4.8s}
-.animate-title li:nth-child(18){animation-delay:5.0s}
-
-@keyframes ani {
-0%{color: #FC6A57;
-	text-shadow:none;
-}
-90%{color: #f5a59b;
-	text-shadow:none;
-}
-100%{color: #fff5f5;
-	mix-blend-mode: multiply;
-	text-shadow:0 0 7px #FC6A57,0 0 70px #f0c3bd}
-}
-
-.cirklit{
-	width: 20px;
-	height: 20px;
-	background: #FFF5F5;
-	mix-blend-mode: multiply;
-	border-radius: 50%;
-	margin:0 15px;
-}
-
-.cirklit:first-child, .cirkbig:first-child {
-	animation: cirleft 5s linear infinite;
-	transform: translateX(0px);
-}
-
-@keyframes cirleft{
-	0%{transform: translateX(0px)}
-	50%{transform: translateX(-400px)}
-	100%{transform: translateX(0px)}
-}
-
-.cirklit:last-child{
-	animation: cirright 5s linear infinite;
-	transform: translateX(0px);
-}
-
-@keyframes cirright{
-	0%{transform: translateX(0px)}
-	50%{transform: translateX(400px)}
-	100%{transform: translateX(0px)}
-}
-
-.cirkbig{
-	width: 48px;
-	height: 48px;
-	background: #FFF5F5;
-	mix-blend-mode: multiply;
-	border-radius: 50%;
-	margin:0 15px;
-}
-
-.wish-title-wrapper .cirkbig:nth-child(4){
-	animation: cirrightbg 3s linear infinite;
-	transform: translateX(0px);
-}
-
-@keyframes cirrightbg{
-	0%{transform: translateX(0px)}
-	50%{transform: translateX(300px)}
-	100%{transform: translateX(0px)}
-}
-
-.wish-title-wrapper .cirkbig:nth-child(2){
-	animation: cirleftbg 3s linear infinite;
-	transform: translateX(0px);
-}
-
-@keyframes cirleftbg{
-	0%{transform: translateX(0px)}
-	50%{transform: translateX(-300px)}
-	100%{transform: translateX(0px)}
+.wish-title {
+	padding-top: 60px;
 }
 .wish-title-item {
 	font-family: 'Baloo 2', cursive;
@@ -521,8 +456,6 @@ align-items: center;
 	text-align: center;
 	color: #FC6A57;
 }
-
-
 .good-idea {
 	max-width: 1440px;
 	display: flex;
@@ -550,7 +483,7 @@ align-items: center;
 .image {
 	padding: 30px 30px 100px 30px;
 }
-.gallery-image {
+.gallery_image {
 	max-width: 100%;
 	border-radius: 4px;
 }
@@ -568,22 +501,19 @@ align-items: center;
 	padding: 1px 1px 100px;
 	background: #FC6A57;
 	transition: 1s;
-	
 }
 .card:hover .gallery_image {
-	
+	border-radius: 6px;
 	transition: 1s;
 }
 .card:hover .image {
 	padding: 0 0 100px 0;
 	transition: 1s;
-	
 }
 .card:hover .name-of-good-idea {
 	background: #FC6A57;
 	color: #fff;
 	transition: 1s;
-	border-radius: 6px;
 }
 .card:hover .card-icon-like, .card:hover .card-icon-unlike {
 	opacity: 1;
@@ -612,41 +542,6 @@ align-items: center;
 	gap:  60px;
 	margin: 0 auto 100px auto;
 }
-.animate-title-blue li{
-	list-style:none;
-	font-family: 'Baloo 2', cursive;
-	font-size:40px;
-	line-height: 64px;
-	color: #1F3865;
-	animation:anib 2.2s linear infinite
-}
-.animate-title-blue li:nth-child(1){animation-delay:.2s}
-.animate-title-blue li:nth-child(3){animation-delay:.8s}
-.animate-title-blue li:nth-child(4){animation-delay:1s}
-.animate-title-blue li:nth-child(5){animation-delay:1.4s}
-.animate-title-blue li:nth-child(6){animation-delay:1.8s}
-.animate-title-blue li:nth-child(7){animation-delay:2s}
-.animate-title-blue li:nth-child(8){animation-delay:2.4s}
-.animate-title-blue li:nth-child(10){animation-delay:2.8s}
-.animate-title-blue li:nth-child(11){animation-delay:2.8s}
-.animate-title-blue li:nth-child(12){animation-delay:3.2s}
-.animate-title-blue li:nth-child(14){animation-delay:3.6s}
-.animate-title-blue li:nth-child(15){animation-delay:4.0s}
-.animate-title-blue li:nth-child(16){animation-delay:4.4s}
-.animate-title-blue li:nth-child(17){animation-delay:4.8s}
-
-@keyframes anib {
-0%{color: #1F3865;
-	text-shadow:none;
-}
-90%{color: #d8e1f3;
-	text-shadow:none;
-}
-100%{color: #ffffff;
-	mix-blend-mode: multiply;
-	text-shadow:0 0 7px #1F3865,0 0 70px #c4d3ed}
-}
-
 .name-of-bad-idea {
 	font-family: 'Nunito', sans-serif;
 	font-size: 20px;
@@ -658,7 +553,6 @@ align-items: center;
 .card:hover .name-of-bad-idea {
 	background: #FC6A57;
 	color: #fff;
-	border-radius: 6px;
 }
 
 
@@ -702,7 +596,6 @@ align-items: center;
 	color:#FC6A57;
 	animation:ani 2.2s linear infinite
 }
-
 .animate-title li:nth-child(1){animation-delay:.2s}
 .animate-title li:nth-child(2){animation-delay:.8s}
 .animate-title li:nth-child(3){animation-delay:1s}
@@ -981,15 +874,3 @@ margin-bottom: 150px;
 	right: 475px;
 	mix-blend-mode: multiply;
 }
-
-
-
-
-
-/* Адаптація проекту */
-
-
-@media only screen and (max-width: 1199px){
-	
-}
-
