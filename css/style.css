@@ -74,13 +74,8 @@ HEAD
 /* Nataly Riabchenko*/
 
 
-<<<<<<< HEAD
-.header-container {
-	/* position: relative; */
-=======
 .logo-header-container {
 	width: 100%;
->>>>>>> 6716f84595cf0a2cd76d37736a24b27e63717ede
 	height: 120px;
 	background: linear-gradient(180deg, #FFF1F2 0%, #FFFFFF 75.83%);
 }
@@ -88,8 +83,8 @@ HEAD
 	position: absolute;
 	margin: 40px auto 40px 80px;
 }
+
 .avatar-container {
-	display: flex;
 	position: relative;
 	max-width: 560px;
 	height: 623px;
@@ -98,7 +93,6 @@ HEAD
 }
 .avatar-dekor {
 	position: absolute;
-	
 }
 .avatar-foto {
 	position: absolute;
@@ -108,7 +102,7 @@ HEAD
 }
 .avatar-foto img {
 	width: 100%;
-	display: flex;
+	display: block;
 }
 .social {
 	display: flex;
@@ -116,7 +110,6 @@ HEAD
 	left: 0;
 	bottom: 0;
 }
-
 .social>div{
 	margin: 0 10px;
 }
@@ -125,7 +118,6 @@ HEAD
 	transition: 300ms;
 	transform: scale(1.8);
 }
-
 
 /* Cards Nata Riabchenko */
 
@@ -142,7 +134,7 @@ HEAD
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
-	
+	padding: 40px 81px 158px 81px;
 }
 .card {
    flex: 0 0 30%;
@@ -200,19 +192,6 @@ HEAD
 }
 
 .brand-container {
-<<<<<<< HEAD
-    width: 100%;
-    max-width: 1280px;
-    display: flex;
-    margin: 0 auto;
-    justify-content: space-between;
-	padding: 38px 0 158px 0;
-}
-.brand-box {
-	flex: 0 0 20%;
-	border-radius: 6px;
-	background: #fff;
-=======
    width: 100%;
    max-width: 1280px;
    display: flex;
@@ -223,19 +202,17 @@ HEAD
 .brand-box {
 	width: 203px;
 	height: 202px;
->>>>>>> 6716f84595cf0a2cd76d37736a24b27e63717ede
 	position: relative;
-
-	
 }
 .brand-image img {
 	margin: 0 auto;
 	width: 160px;
 	height: 160px;
 	display: flex;
-	border-radius: 6px;
-}
+	align-items: center;
+	justify-content: center;
 
+}
 .brand-text {
 	text-align: center;
 	color: #FC6A57;
@@ -255,16 +232,6 @@ HEAD
 }
 .brand-box:hover {
 	border-radius: 6px;
-<<<<<<< HEAD
-   	border: 1px solid #FC6A57;
-	background: #fff;
-	
-}
- .brand-box:hover .brand-image img {
-    width: 200px;
-	height: 200px;
-   
-=======
 	background: #FC6A57;
 	transition: 1.2s linear;
 }
@@ -275,7 +242,6 @@ HEAD
 	border-radius: 6px;
 	border-radius: 6px 6px 0 0;
 	transition: 0.3s;
->>>>>>> 6716f84595cf0a2cd76d37736a24b27e63717ede
 }
 .brand-box:hover .brand-text{
 	background: #FC6A57;
@@ -288,46 +254,10 @@ HEAD
 }
 
 
-@media only screen 
-	and (max-width: 420px){
-
-.wrapper{
-	padding: 0 20px;
-}
-
-		.avatar-dekor {
-		display: none;
-}
-.avatar-foto {
-	top: 10px;
-	left: 20px;
-}
-		.cards {
-			display: block;
-			margin: 0 20px;
-		}
-		.card { 
-			height: 330px;
-			margin-bottom: 60px;
-		}
-
-		.brand-container {
-		display: block;	
-	}
-
-		.brand-image img {
-		width: 80px;
-		height: 80px;
-		display: block;
-	}
-	.brand-text {
-	text-align: right;
-	
-}
 
 
 
-	}	
+
 					/* Ruslan Shyshenko */
 
 .wrapper-header{
@@ -371,12 +301,12 @@ HEAD
 	line-height: 22px;
 	text-align: center;
 	color: #FC6A57;
+	padding: 9px 20px;
+	border-radius: 20px;
 }
 
 .nav__link:hover{
-	padding: 9px 20px;
 	background: #FC6A57;
-	border-radius: 20px;
 	color: #FFF;
 	transition: 700ms;
 }
@@ -400,7 +330,6 @@ HEAD
 }
 
 
-
             /* Tanya Chernenko */
 
 
@@ -410,11 +339,7 @@ height: 500px;
 }
 .heading {
 	max-width: 468px;
-<<<<<<< HEAD
-	font-family: Baloo 2;
-=======
 	font-family: 'Baloo 2', cursive;
->>>>>>> 6716f84595cf0a2cd76d37736a24b27e63717ede
 	font-style: normal;
 	font-weight: 800;
 	font-size: 80px;
@@ -425,15 +350,16 @@ height: 500px;
 }
 .surprising {
 	max-width: 640px;
-	font-family: 'Nunito';
+	font-family: 'Nunito', sans-serif;
 	font-weight: 400;
 	font-size: 20px;
 	line-height: 28px;
 	color: #FC6A57;
 	margin-bottom: 10px;
+	right: 80px;
 }
 .big-circle-text {
-	font-family: 'Nunito';
+	font-family: 'Nunito', sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 20px;
@@ -443,7 +369,7 @@ height: 500px;
 	padding: 120px 75px 4px 76px;
 }
 .counter {
-	font-family: 'Baloo 2';
+	font-family: 'Baloo 2', cursive;
 	font-style: normal;
 	font-weight: 800;
 	font-size: 30px;
@@ -452,7 +378,7 @@ height: 500px;
 	text-align: center;
 }
 .small-circle-text {
-	font-family: 'Nunito';
+	font-family: 'Nunito', sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 20px;
@@ -470,71 +396,37 @@ height: 500px;
 	width: 318px;
 	height: 318px;
 	background: #FFF5F5;
-<<<<<<< HEAD
-  	border-radius: 50%;
-  	mix-blend-mode: multiply;
-  	position: absolute;
-  	right: 65px;
- }
-
-=======
 	border-radius: 50%;
 	mix-blend-mode: multiply;
 	position: absolute;
 	right: 145px;
 }
-
 .small-ellipse {
 	width: 130px;
 	height: 130px;
 	background: #FFF5F5;
-<<<<<<< HEAD
-  	border-radius: 50%;
-  	mix-blend-mode: multiply;
-  	position: absolute;
-  	right: 0;
-    top: 410px;
-=======
 	border-radius: 50%;
 	mix-blend-mode: multiply;
 	position: absolute;
 	right: 80px;
    	top: 410px;
->>>>>>> 6716f84595cf0a2cd76d37736a24b27e63717ede
 }
 
 /* CardsChernenko */
 
-<<<<<<< HEAD
-.section-good-idea-wrapper{
-=======
 .section-good-idea-wrapper {
->>>>>>> 6716f84595cf0a2cd76d37736a24b27e63717ede
 	width: 100%;
 	max-width: 1440px;
 	margin: 0 auto;
-	background: #FFF5F5 ;
+	background: #FFF5F5;
 	position: relative;
 	overflow: hidden;
 }
-<<<<<<< HEAD
-.wish-title {
-	padding-top: 60px;
-}
-.wish-title-item {
-	font-family: 'Baloo 2', cursive;
-	font-weight: 800;
-	font-size: 40px;
-	line-height: 64px;
-	text-align: center;
-	color: #FC6A57;
-=======
 .animate-title, .animate-title-blue{
 	display: flex;
 }
 .gap {
 	width: 8px;
->>>>>>> 6716f84595cf0a2cd76d37736a24b27e63717ede
 }
 .good-idea {
 	max-width: 1440px;
@@ -563,7 +455,7 @@ height: 500px;
 .image {
 	padding: 30px 30px 100px 30px;
 }
-.gallery_image {
+.gallery-image {
 	max-width: 100%;
 	border-radius: 4px;
 }
@@ -582,10 +474,6 @@ height: 500px;
 	transition: 1s;
 }
 .card:hover .gallery_image {
-<<<<<<< HEAD
-	border-radius: 6px;
-=======
->>>>>>> 6716f84595cf0a2cd76d37736a24b27e63717ede
 	transition: 1s;
 }
 .card:hover .image {
@@ -596,6 +484,7 @@ height: 500px;
 	background: #FC6A57;
 	color: #fff;
 	transition: 1s;
+	border-radius: 6px;
 }
 .card:hover .card-icon-like, .card:hover .card-icon-unlike {
 	opacity: 1;
@@ -623,8 +512,6 @@ height: 500px;
 	gap:  60px;
 	margin: 0 auto 100px auto;
 }
-<<<<<<< HEAD
-=======
 .animate-title-blue li{
 	list-style:none;
 	font-family: 'Baloo 2', cursive;
@@ -653,7 +540,6 @@ height: 500px;
 	mix-blend-mode: multiply;
 	text-shadow:0 0 7px #1F3865,0 0 70px #c4d3ed}
 }
->>>>>>> 6716f84595cf0a2cd76d37736a24b27e63717ede
 .name-of-bad-idea {
 	font-family: 'Nunito', sans-serif;
 	font-size: 20px;
@@ -665,6 +551,7 @@ height: 500px;
 .card:hover .name-of-bad-idea {
 	background: #FC6A57;
 	color: #fff;
+	border-radius: 6px;
 }
 
 
@@ -699,6 +586,7 @@ align-items: center;
 	color:#FC6A57;
 	animation:ani 2.2s linear infinite
 }
+
 .animate-title li:nth-child(1){animation-delay:.2s}
 .animate-title li:nth-child(2){animation-delay:.8s}
 .animate-title li:nth-child(3){animation-delay:1s}
@@ -986,8 +874,6 @@ position: relative;
    right: -230px;
 	mix-blend-mode: multiply;
 }
-<<<<<<< HEAD
-=======
 
 
 
@@ -997,5 +883,4 @@ position: relative;
 @media only screen and (max-width: 1199px){
 	
 }
-
 
