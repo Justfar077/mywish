@@ -409,7 +409,7 @@ height: 500px;
 	mix-blend-mode: multiply;
 	position: absolute;
 	right: 80px;
-   	top: 410px;
+   top: 410px;
 }
 
 /* CardsChernenko */
@@ -481,10 +481,10 @@ height: 500px;
 	transition: 1s;
 }
 .card:hover .name-of-good-idea {
-	background: #FC6A57;
+	/* background: #FC6A57; */
 	color: #fff;
-	transition: 1s;
-	border-radius: 6px;
+	/* transition: 1s; */
+	/* border-radius: 6px; */
 }
 .card:hover .card-icon-like, .card:hover .card-icon-unlike {
 	opacity: 1;
@@ -549,9 +549,9 @@ height: 500px;
 	padding: 30px 30px 40px 30px;
 }
 .card:hover .name-of-bad-idea {
-	background: #FC6A57;
+	/* background: #FC6A57; */
 	color: #fff;
-	border-radius: 6px;
+	/* border-radius: 6px; */
 }
 
 
